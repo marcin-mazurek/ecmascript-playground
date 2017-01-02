@@ -103,14 +103,20 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 var _this = this;
 (function() {
   return __awaiter(_this, void 0, void 0, function() {
-    var response;
-    return __generator(this, function(_a) {
-      switch (_a.label) {
+    var response,
+      _a,
+      _b,
+      _c;
+    return __generator(this, function(_d) {
+      switch (_d.label) {
         case 0:
           return [4 /*yield*/ , fetch('http://example.com/some.json')];
         case 1:
-          response = _a.sent();
-          console.log(response.json());
+          response = _d.sent();
+          _b = (_a = console).log;
+          return [4 /*yield*/ , response.json()];
+        case 2:
+          _b.apply(_a, [_d.sent()]);
           return [2 /*return*/ ];
       }
     });

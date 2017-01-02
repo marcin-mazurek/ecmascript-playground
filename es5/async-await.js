@@ -38,10 +38,16 @@ _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
 
         case 2:
           response = _context.sent;
+          _context.t0 = console;
+          _context.next = 6;
+          return response.json();
 
-          console.log(response.json());
+        case 6:
+          _context.t1 = _context.sent;
 
-        case 4:
+          _context.t0.log.call(_context.t0, _context.t1);
+
+        case 8:
         case 'end':
           return _context.stop();
       }

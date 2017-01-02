@@ -26,5 +26,5 @@ function _asyncToGenerator(fn) {
 
 _asyncToGenerator(function*() {
   const response = yield fetch('http://example.com/some.json');
-  console.log(response.json());
+  console.log((yield response.json()));
 })();
