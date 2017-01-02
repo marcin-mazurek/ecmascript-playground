@@ -13,9 +13,9 @@ function _asyncToGenerator(fn) {
           resolve(value);
         } else {
           return Promise.resolve(value).then(function(value) {
-            return step("next", value);
+            step("next", value);
           }, function(err) {
-            return step("throw", err);
+            step("throw", err);
           });
         }
       }
@@ -26,5 +26,5 @@ function _asyncToGenerator(fn) {
 
 _asyncToGenerator(function*() {
   const response = yield fetch('http://example.com/some.json');
-  console.log(repsonse.json());
+  console.log(response.json());
 })();

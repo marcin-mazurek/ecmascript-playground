@@ -110,7 +110,7 @@ var _this = this;
           return [4 /*yield*/ , fetch('http://example.com/some.json')];
         case 1:
           response = _a.sent();
-          console.log(repsonse.json());
+          console.log(response.json());
           return [2 /*return*/ ];
       }
     });

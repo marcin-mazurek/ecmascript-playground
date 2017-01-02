@@ -15,9 +15,9 @@ function _asyncToGenerator(fn) {
           resolve(value);
         } else {
           return Promise.resolve(value).then(function(value) {
-            return step("next", value);
+            step("next", value);
           }, function(err) {
-            return step("throw", err);
+            step("throw", err);
           });
         }
       }
@@ -39,7 +39,7 @@ _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
         case 2:
           response = _context.sent;
 
-          console.log(repsonse.json());
+          console.log(response.json());
 
         case 4:
         case 'end':
