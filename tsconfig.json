@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "es5-ts"
+  },
+  "include": [
+    "stage/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "es6",
+    "es5"
+  ]
+}
